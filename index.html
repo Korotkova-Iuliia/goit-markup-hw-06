@@ -492,6 +492,7 @@
           </ul>
         </div>
 
+        <!-- form subscribe -->
         <form class="subscribe-form">
           <b>Подпишитесь на рассылку</b>
           <div class="subscribe-input-btn-box">
@@ -517,38 +518,79 @@
             <use href="./img/sprite.svg#icon-close"></use>
           </svg>
         </button>
+
+        <!-- form modal-->
         <form class="modal-form">
-          <b>Оставьте свои данные, мы вам перезвоним</b>
-        
-          <svg class="soc-list-icon">
-            <use href="./img/sprite.svg#icon-soc-linkedin"></use>
-          </svg>
-          <label for=""><input type="text" name="user-name" placeholder="" required minlength="2" id="" />Имя</label>
-          
-          
-        <svg class="soc-list-icon">
-          <use href="./img/sprite.svg#icon-soc-linkedin"></use>
-        </svg>
-          <label for=""><input type="tel" name="user-phone" id="" />Телефон</label>
-          
-          
-         
-          <svg class="soc-list-icon">
-            <use href="./img/sprite.svg#icon-soc-linkedin"></use>
-          </svg>
-          <label for=""><input type="email" name="user-email" id="" />Почта</label>
-          
-          
-       
-          <label for=""><textarea name="user-comment" class="user-comment-area" placeholder="Введите текст" id=""></textarea>Комментарий</label>
-          
-<label>
-  <input class="checkbox-convention" value="convention" name="user-convention" type="checkbox">
-  Соглашаюсь с рассылкой и принимаю Условия договора
-</label>
-<button type="submit" class="modal-btn-submit">
-  Отправить
-</button>
+          <b class="modal-form-title"
+            >Оставьте свои данные, мы вам перезвоним</b
+          >
+
+          <div class="modal-box-input">
+            <svg class="user-name-form" width="12px" height="12px">
+              <use href="./img/sprite.svg#icon-soc-linkedin"></use>
+            </svg>
+            <label class="user-form-label">
+              Имя
+              <input
+                class="input-box-form"
+                type="text"
+                name="user-name"
+                placeholder=""
+                required
+                minlength="2"
+                autocomplete="on"
+            /></label>
+
+            <svg class="user-tel-form" width="13px" height="13px">
+              <use href="./img/sprite.svg#icon-soc-linkedin"></use>
+            </svg>
+            <label for="" class="user-form-label">
+              Телефон
+              <input
+                class="input-box-form"
+                type="tel"
+                name="user-phone"
+                id=""
+                autocomplete="on"
+              />
+            </label>
+
+            <svg class="user-email-form" width="15px" height="12px">
+              <use href="./img/sprite.svg#icon-soc-linkedin"></use>
+            </svg>
+            <label for="" class="user-form-label">
+              Почта
+              <input
+                class="input-box-form"
+                type="email"
+                name="user-email"
+                id=""
+            /></label>
+          </div>
+
+          <label for="" class="user-form-label">
+            Комментарий
+            <textarea
+              class="user-comment-area"
+              name="user-comment"
+              placeholder="Введите текст"
+              id=""
+            ></textarea>
+          </label>
+
+          <div class="convention-box">
+            <input class="checkbox-convention-input" value="user-convention" name="user-convention" type="checkbox" required />
+            <label class="checkbox-convention-txt">
+              Соглашаюсь с рассылкой и принимаю
+              <a href="">
+                <span class="convention-accent"> Условия договора</span>
+              </a>
+            </label>
+          </div>
+
+          <button type="submit" class="modal-btn-submit">
+            Отправить
+          </button>
         </form>
       </div>
     </div>
