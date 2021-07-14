@@ -505,6 +505,9 @@
             />
             <button type="submit" class="subscribe-btn-submit">
               Подписаться
+            <svg class="icon-plane-send"  >
+              <use href="./img/sprite.svg#icon-plane-send"></use>
+            </svg>
             </button>
           </div>
         </form>
@@ -527,7 +530,7 @@
 
           <div class="modal-box-input">
             <svg class="user-name-form" width="12px" height="12px">
-              <use href="./img/sprite.svg#icon-soc-linkedin"></use>
+              <use href="./img/sprite.svg#icon-form-name"></use>
             </svg>
             <label class="user-form-label">
               Имя
@@ -542,29 +545,27 @@
             /></label>
 
             <svg class="user-tel-form" width="13px" height="13px">
-              <use href="./img/sprite.svg#icon-soc-linkedin"></use>
+              <use href="./img/sprite.svg#icon-form-phone"></use>
             </svg>
-            <label for="" class="user-form-label">
+            <label class="user-form-label">
               Телефон
               <input
                 class="input-box-form"
                 type="tel"
                 name="user-phone"
-                id=""
                 autocomplete="on"
               />
             </label>
 
             <svg class="user-email-form" width="15px" height="12px">
-              <use href="./img/sprite.svg#icon-soc-linkedin"></use>
+              <use href="./img/sprite.svg#icon-form-envelope"></use>
             </svg>
-            <label for="" class="user-form-label">
+            <label class="user-form-label">
               Почта
               <input
                 class="input-box-form"
                 type="email"
                 name="user-email"
-                id=""
             /></label>
           </div>
 
@@ -578,15 +579,14 @@
             ></textarea>
           </label>
 
-          <div class="convention-box">
-            <input class="checkbox-convention-input" value="user-convention" name="user-convention" type="checkbox" required />
             <label class="checkbox-convention-txt">
-              Соглашаюсь с рассылкой и принимаю
+              <input class="checkbox-convention-input" value="user-convention" name="user-convention" type="checkbox" required />
+              <span class="icon"></span>
+              <span class="check-txt">Соглашаюсь с рассылкой и принимаю</span>
               <a href="">
                 <span class="convention-accent"> Условия договора</span>
               </a>
             </label>
-          </div>
 
           <button type="submit" class="modal-btn-submit">
             Отправить
