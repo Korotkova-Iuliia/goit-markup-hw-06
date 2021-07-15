@@ -706,13 +706,16 @@ footer .soc-list:not(:last-child) {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+  color: #ffffff;
 
-  color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline: none;
+}
+.subscribe-form-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .subscribe-btn-submit {
