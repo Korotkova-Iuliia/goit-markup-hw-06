@@ -88,7 +88,7 @@
       <!-- section the best -->
       <section class="section">
         <div class="container">
-          <h2 hidden>Преимущества</h2>
+          <h2 class="the-best-title-hidden">Преимущества</h2>
 
           <ul class="the-best list">
             <li class="the-best-list">
@@ -505,12 +505,13 @@
             />
             <button type="submit" class="subscribe-btn-submit">
               Подписаться
-            <svg class="icon-plane-send"  >
-              <use href="./img/sprite.svg#icon-plane-send"></use>
-            </svg>
+              <svg class="icon-plane-send">
+                <use href="./img/sprite.svg#icon-plane-send"></use>
+              </svg>
             </button>
           </div>
         </form>
+
       </div>
     </footer>
 
@@ -522,71 +523,72 @@
           </svg>
         </button>
 
-        <!-- form modal-->
-        <form class="modal-form">
+        <!-- form modal data-user -->
+        <form class="modal-form modal-box-input">
           <b class="modal-form-title"
             >Оставьте свои данные, мы вам перезвоним</b
           >
-
-          <div class="modal-box-input">
-            <svg class="user-name-form" width="12px" height="12px">
-              <use href="./img/sprite.svg#icon-form-name"></use>
-            </svg>
+          
             <label class="user-form-label">
               Имя
-              <input
-                class="input-box-form"
-                type="text"
-                name="user-name"
-                placeholder=""
-                required
-                minlength="2"
-                autocomplete="on"
-            /></label>
-
-            <svg class="user-tel-form" width="13px" height="13px">
-              <use href="./img/sprite.svg#icon-form-phone"></use>
-            </svg>
-            <label class="user-form-label">
-              Телефон
-              <input
-                class="input-box-form"
-                type="tel"
-                name="user-phone"
-                autocomplete="on"
-              />
+              <span class="input-data-form-box">
+                  <input
+                  class="input-data-form" type="text" name="user-name" minlength="2" autocomplete="on" pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы кирилицы или латиницы" required
+                  />
+                <svg class="user-icon-form" width="12px" height="12px">
+                  <use href="./img/sprite.svg#icon-form-name"></use>
+                </svg>
+              </span>
             </label>
 
-            <svg class="user-email-form" width="15px" height="12px">
-              <use href="./img/sprite.svg#icon-form-envelope"></use>
-            </svg>
+            
+            <label class="user-form-label">
+              Телефон
+                <span class="input-data-form-box">
+              <input
+                class="input-data-form" type="tel" name="user-phone" autocomplete="on"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="000-000-00-00" required
+              />
+              <svg class="user-icon-form" width="13px" height="13px">
+                <use href="./img/sprite.svg#icon-form-phone"></use>
+              </svg>
+              </span>
+            </label>
+
+            
             <label class="user-form-label">
               Почта
-              <input
-                class="input-box-form"
-                type="email"
-                name="user-email"
-            /></label>
-          </div>
+              <span class="input-data-form-box">
+                <input class="input-data-form" type="email" name="user-email" />
+                <svg class="user-icon-form" width="15px" height="12px">
+                  <use href="./img/sprite.svg#icon-form-envelope"></use>
+                </svg>
+              </span>
+            </label>
 
-          <label for="" class="user-form-label">
+          <label class="user-form-label-comment">
             Комментарий
             <textarea
               class="user-comment-area"
               name="user-comment"
               placeholder="Введите текст"
-              id=""
             ></textarea>
           </label>
 
-            <label class="checkbox-convention-txt">
-              <input class="checkbox-convention-input" value="user-convention" name="user-convention" type="checkbox" required />
-              <span class="icon"></span>
-              <span class="check-txt">Соглашаюсь с рассылкой и принимаю</span>
-              <a href="">
-                <span class="convention-accent"> Условия договора</span>
-              </a>
-            </label>
+          <label class="checkbox-convention-txt">
+            <input
+              class="checkbox-convention-input"
+              value="user-convention"
+              name="user-convention"
+              type="checkbox"
+              required
+            />
+            <span class="icon"></span>
+            <span class="check-txt">Соглашаюсь с рассылкой и принимаю</span>
+            <a class="link" href="">
+              <span class="convention-accent">Условия договора</span>
+            </a>
+          </label>
 
           <button type="submit" class="modal-btn-submit">
             Отправить
@@ -594,6 +596,7 @@
         </form>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
