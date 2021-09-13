@@ -1,0 +1,30 @@
+.curent {
+  display: block;
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--color-accent);
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--color-accent);
+    transform: scaleY(1) translateY(0px);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover::after {
+    display: block;
+    position: absolute;
+    transform: scaleY(0.5) translateY(-35px);
+  }
+}

@@ -1,8 +1,8 @@
 .button-main {
   display: flex;
-  justify-content: center;
+  align-items: center;
   width: 200px;
-  margin: 0 auto;
+  margin: 0;
   padding: 10px;
 
   font-size: 16px;
@@ -17,15 +17,17 @@
 
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--color-accent-dark);
+  }
+  &-submit {
+    align-items: center;
+    margin: 0;
+  }
 }
-.button-main:hover,
-.button-main:focus {
-  background-color: var(--color-accent-dark);
-}
-
 .icon-plane-send {
-  display: inline-block;
-  margin-left: 10px;
+  // margin-left: auto;
   width: 24px;
   height: 24px;
   fill: #ffffff;

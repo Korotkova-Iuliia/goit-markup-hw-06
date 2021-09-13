@@ -2,10 +2,11 @@
   background: var(--background-hero-footer);
   padding-top: 60px;
   padding-bottom: 60px;
+  align-items: baseline;
+  display: flex;
 }
 
-.container-footer {
-  align-items: baseline;
+.container.container-footer {
   display: flex;
 }
 
@@ -14,18 +15,7 @@
   max-width: 231px;
 }
 
-.logo-footer {
-  display: flex;
-  margin-bottom: 20px;
-}
 
-.container > .logo {
-  display: block;
-  margin-bottom: 20;
-}
-.logo-studio {
-  color: #ffffff;
-}
 
 .contact-list {
   display: block;
@@ -108,7 +98,7 @@ footer .soc-list:not(:last-child) {
 
 .subscribe-input-btn-box {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
 .subscribe-form-input {
   display: inline;

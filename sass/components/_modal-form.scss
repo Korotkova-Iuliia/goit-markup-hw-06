@@ -3,18 +3,19 @@
   padding-top: 40px;
   padding-left: 41px;
   padding-right: 39px;
-}
-.modal-form-title {
-  display: block;
-  margin-bottom: 12px;
 
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
+  &-title {
+    display: block;
+    margin-bottom: 12px;
 
-  color: var(--color-title);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--color-title);
+  }
 }
 
 .user-form-label {
@@ -27,16 +28,17 @@
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--color-txt);
-}
-.user-form-label-comment {
-  width: 100%;
-  margin-bottom: 20px;
 
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: var(--color-txt);
+  &-comment {
+    width: 100%;
+    margin-bottom: 20px;
+
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--color-txt);
+  }
 }
 
 .input-data-form-box {
@@ -90,21 +92,21 @@
   text-align: left;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.user-comment-area::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.67;
-  letter-spacing: 0.01em;
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.01em;
 
-  color: rgba(117, 117, 117, 0.5);
-}
+    color: rgba(117, 117, 117, 0.5);
+  }
 
-.user-comment-area:focus,
-.user-comment-area:hover {
-  outline: none;
-  border: 1px solid var(--color-accent);
+  &:focus,
+  &:hover {
+    outline: none;
+    border: 1px solid var(--color-accent);
+  }
 }
 
 .checkbox-convention-input {
@@ -127,25 +129,24 @@
   box-shadow: inset 0 0 0 2px #000000;
   background-color: #fff;
   border-radius: 4px;
-}
 
-.checkbox-convention-input:checked + .icon {
-  background-color: var(--color-accent);
-  background-image: url(../img/loud/svg/form-check.svg);
-  box-shadow: inset 0 0 0 0px #000000;
-  background-size: contain;
-  background-origin: border-box;
-  background-position: center;
-  background-size: cover;
-  align-items: center;
-}
-
-.checkbox-convention-input:hover + .icon {
-  cursor: pointer;
-}
-.checkbox-convention-input:focus + .icon {
-  box-shadow: 0 0 0 1px #000000;
-  border: 1px solid var(--color-accent);
+  .checkbox-convention-input:checked + & {
+    background-color: var(--color-accent);
+    background-image: url(../img/loud/svg/form-check.svg);
+    box-shadow: inset 0 0 0 0px #000000;
+    background-size: contain;
+    background-origin: border-box;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+  }
+  .checkbox-convention-input:hover + & {
+    cursor: pointer;
+  }
+  .checkbox-convention-input:focus + & {
+    box-shadow: 0 0 0 1px #000000;
+    border: 1px solid var(--color-accent);
+  }
 }
 
 .checkbox-convention-txt {
@@ -157,10 +158,11 @@
   text-align: center;
 
   color: var(--color-txt);
+  &:hover {
+    cursor: pointer;
+  }
 }
-.checkbox-convention-txt:hover {
-  cursor: pointer;
-}
+
 .check-txt {
   font-weight: 400;
   font-size: 14px;

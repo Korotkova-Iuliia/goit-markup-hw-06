@@ -10,7 +10,19 @@
   color: #000000;
   animation-duration: 250ms;
   animation-delay: 250ms;
-}
-.logo-web {
-  color: var(--color-accent);
+  &-web {
+    color: var(--color-accent);
+  }
+  &-footer {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .container > & {
+    display: block;
+    margin-bottom: 20;
+  }
+
+  &-studio {
+    color: #ffffff;
+  }
 }
